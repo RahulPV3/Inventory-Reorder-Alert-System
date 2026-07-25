@@ -1,0 +1,37 @@
+import csv
+
+reorder_items=[]
+with open("inventory.csv",mode="r") as file:
+    reader= csv.DictReader(file)
+
+    for row in reader:
+        item_name=row["item_name"]
+        current_quantity=int(row["current_quantity"])
+        reorder_threshold=int(row["reorder_threshold"])
+
+        print("item_name: ",item_name)
+        print("current_quantity: ",current_quantity)
+        print("reorder_threshold: ",reorder_threshold)
+
+        if (current_quantity < reorder_threshold):
+            print("Status: Needs reorder")
+            reorder_items.append({"item_name": item_name,"current_quantity":current_quantity,"reorder_threshold":reorder_threshold})
+        else:
+            print("Status: Stock OK")
+
+        print("-----------------")
+    
+    print("\n Items that need reordering:\n")
+    for item in reorder_items:
+        print(f"Item name          :{item['item_name']}")
+        print(f"Current Quantity   :{item['current_quantity']}")
+        print(f"Reorder Threshold  :{item['reorder_threshold']}")
+        print("-"*35)
+
+with open("restock_report.csv", mode="w", newline="") as report:
+    fieldnames=["item_name", "current_quantity", "reorder_threshold"]
+    writer=csv.DictWriter(report, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerows(reorder_items)
+
+print("\n Restock report saved successfully as 'restock_report.csv'")

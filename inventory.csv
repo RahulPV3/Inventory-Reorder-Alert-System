@@ -1,0 +1,9 @@
+item_name,current_quantity,reorder_threshold
+Laptop,10,15
+Mouse,25,20
+Keyboard,8,10
+Monitor,3,5
+USB Cable,40,30
+Headphones,2,8
+Printer,0,5
+Webcam,12,12

@@ -1,0 +1,6 @@
+item_name,current_quantity,reorder_threshold
+Laptop,10,15
+Keyboard,8,10
+Monitor,3,5
+Headphones,2,8
+Printer,0,5
