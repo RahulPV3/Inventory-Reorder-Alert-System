@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Inventory Reorder Alert System is a Python application that helps identify products that require restocking based on their current stock levels and predefined reorder thresholds. The program reads inventory data from a CSV file, analyzes stock levels, and generates a report of items that need to be reordered. 
+The Inventory Reorder Alert System is a Python application that helps identify products that require restocking based on their current stock levels and predefined reorder thresholds. The program reads inventory data from a CSV file, analyzes stock levels, and generates a report of items that need to be reordered.
 
 ## Features
 
