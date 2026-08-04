@@ -5,7 +5,7 @@ def read_inventory():
 
     try:
         with open("inventory.csv",mode="r") as file:
-            reader = csv.DictReader(file)
+            reader = csv.DictReader(file) 
 
             for row in reader:
                 item_name=row["item_name"]
