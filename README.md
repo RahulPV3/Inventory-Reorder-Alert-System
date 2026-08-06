@@ -1,56 +1,140 @@
-# Inventory Reorder Alert System
+# 📦 Inventory Reorder Alert System
 
-## Overview
+A simple Inventory Reorder Alert System built with **Python** and **Streamlit** that helps identify products requiring restocking based on predefined reorder thresholds.
 
-The Inventory Reorder Alert System is a Python application that helps identify products that require restocking based on their current stock levels and predefined reorder thresholds. The program reads inventory data from a CSV file, analyzes stock levels, and generates a report of items that need to be reordered.
+---
 
-## Features
+## 🚀 Features
 
-- Read inventory data from a CSV file
-- Detect items below the reorder threshold
-- Display a formatted reorder report
-- Export the report to a new CSV file
-- Handle missing input files using exception handling
+- 📂 Read inventory data from a CSV file
+- 📊 Interactive Streamlit dashboard
+- 📋 Display complete inventory in a table
+- 🔴 Highlight items that need reordering
+- 🔍 Filter to show only low-stock items
+- 📥 Download the generated restock report as a CSV
+- 📤 Upload a custom inventory CSV
+- ⚠️ Basic exception handling for missing files
 
-## Technologies Used
+---
+
+## 🛠️ Technologies Used
 
 - Python 3
+- Streamlit
+- Pandas
 - CSV Module
+- Git & GitHub
 
-## Project Structure
+---
 
-```
+## 📁 Project Structure
+
+```text
 Inventory-Reorder-Alert-System/
 │
+├── app.py
 ├── inventory_alert.py
 ├── inventory.csv
 ├── restock_report.csv
+├── requirements.txt
+├── img/
+│   ├── screenshot1.png
+│   ├── screenshot2.png
+│   └── screenshot3.png
+├── .gitignore
 └── README.md
 ```
 
-## How to Run
+---
 
-1. Clone the repository
+## 📸 Screenshots
 
-2. Navigate to the project folder
+### Dashboard
 
-3. Run:
+![Dashboard](img/screenshot1.png)
 
+---
+
+### Inventory Table
+
+![Inventory Table](img/screenshot2.png)
+
+---
+
+### Filter & Download Report
+
+![Filter & Download](img/screenshot3.png)
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/RahulPV3/Inventory-Reorder-Alert-System.git
 ```
-python inventory_alert.py
+
+### 2. Navigate to the project folder
+
+```bash
+cd Inventory-Reorder-Alert-System
 ```
 
-## Sample Output
+### 3. Install the required packages
 
-```
-Items that need reordering
-
-Item Name           : Laptop
-Current Quantity    : 10
-Reorder Threshold   : 15
-Status              : Needs Reorder
+```bash
+pip install -r requirements.txt
 ```
 
-## Author
+---
 
-Rahul PV
+## ▶️ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will automatically open in your default web browser.
+
+---
+
+## 📄 Sample Inventory
+
+| Item | Current Quantity | Reorder Threshold | Status |
+|------|-----------------:|------------------:|--------|
+| Laptop | 10 | 15 | 🔴 Needs Reorder |
+| Mouse | 25 | 20 | 🟢 Stock OK |
+| Keyboard | 8 | 10 | 🔴 Needs Reorder |
+| Monitor | 3 | 5 | 🔴 Needs Reorder |
+
+---
+
+## 📊 Dashboard Features
+
+- 📦 Total inventory items
+- 🔴 Number of items needing reorder
+- 🟢 Number of items with sufficient stock
+- 📋 Interactive inventory table
+- 🔍 Filter only low-stock items
+- 📥 Download restock report
+- 📤 Upload a custom inventory CSV
+
+---
+
+## 📌 Future Improvements
+
+- Database integration (SQLite/MySQL/PostgreSQL)
+- User authentication
+- Email alerts for low stock
+- Add/Edit/Delete inventory items
+- Charts and analytics dashboard
+- Cloud deployment
+
+---
+
+## 👨‍💻 Author
+
+**Rahul PV**
+
+GitHub: [RahulPV3](https://github.com/RahulPV3)
