@@ -2,7 +2,14 @@
 
 A simple Inventory Reorder Alert System built with **Python** and **Streamlit** that helps identify products requiring restocking based on predefined reorder thresholds.
 
----
+
+## 🌐 Live Demo
+
+Try the deployed application:
+
+👉 https://inventory-reorder-alert-system-5ykvjgscuud3xjau2ribbe.streamlit.app/
+
+
 
 ## 🚀 Features
 
